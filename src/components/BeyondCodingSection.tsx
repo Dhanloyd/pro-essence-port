@@ -3,7 +3,7 @@ import { BookOpen } from "lucide-react";
 const BeyondCodingSection = () => {
   return (
     <section className="animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
-      <div className="bg-card rounded-2xl p-8 shadow-elegant hover-lift">
+      <div className="bg-card rounded-2xl p-8 shadow-elegant border hover-lift">
         <div className="flex items-center gap-3 mb-4">
           <BookOpen className="w-6 h-6 text-primary" />
           <h2 className="text-2xl font-bold">Beyond Coding</h2>

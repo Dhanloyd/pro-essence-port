@@ -23,7 +23,7 @@ const certifications = [
 const CertificationsSection = () => {
   return (
     <section className="animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-      <div className="bg-card rounded-2xl p-8 shadow-elegant hover-lift">
+      <div className="bg-card rounded-2xl p-8 shadow-elegant border hover-lift">
         <div className="flex items-center justify-between mb-6">
           <div className="flex items-center gap-3">
             <Award className="w-6 h-6 text-primary" />

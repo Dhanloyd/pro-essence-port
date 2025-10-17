@@ -6,7 +6,7 @@ import profilePhoto from "@/assets/profile-photo.jpg";
 const ProfileSection = () => {
   return (
     <section className="animate-fade-in-up">
-      <div className="bg-card rounded-2xl p-8 shadow-elegant hover-lift">
+      <div className="bg-card rounded-2xl p-8 shadow-elegant border hover-lift">
         <div className="flex flex-col items-center text-center mb-6">
           <img
             src={profilePhoto}
@@ -35,7 +35,7 @@ const ProfileSection = () => {
             <Mail className="w-4 h-4 mr-2" />
             Send Email
           </Button>
-          <Button variant="secondary" className="w-full gradient-primary text-primary-foreground" size="lg">
+          <Button variant="secondary" className="w-full" size="lg">
             Join My Community
           </Button>
         </div>

@@ -21,7 +21,7 @@ const socialLinks = [
 const SocialLinksSection = () => {
   return (
     <section className="animate-fade-in-up" style={{ animationDelay: "0.7s" }}>
-      <div className="bg-card rounded-2xl p-8 shadow-elegant hover-lift">
+      <div className="bg-card rounded-2xl p-8 shadow-elegant border hover-lift">
         <div className="flex items-center gap-3 mb-6">
           <LinkIcon className="w-6 h-6 text-primary" />
           <h2 className="text-2xl font-bold">Social Links</h2>

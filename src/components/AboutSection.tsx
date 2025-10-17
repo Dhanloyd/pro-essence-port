@@ -1,7 +1,7 @@
 const AboutSection = () => {
   return (
     <section className="animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
-      <div className="bg-card rounded-2xl p-8 shadow-elegant hover-lift">
+      <div className="bg-card rounded-2xl p-8 shadow-elegant border hover-lift">
         <h2 className="text-2xl font-bold mb-4">About</h2>
         <div className="space-y-4 text-muted-foreground leading-relaxed">
           <p>

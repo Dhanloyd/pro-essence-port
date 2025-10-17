@@ -24,7 +24,7 @@ const ContactSection = () => {
 
   return (
     <section className="animate-fade-in-up" style={{ animationDelay: "0.5s" }}>
-      <div className="bg-card rounded-2xl p-8 shadow-elegant hover-lift">
+      <div className="bg-card rounded-2xl p-8 shadow-elegant border hover-lift">
         <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="space-y-2">

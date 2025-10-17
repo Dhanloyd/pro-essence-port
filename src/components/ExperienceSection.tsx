@@ -40,7 +40,7 @@ const experiences = [
 const ExperienceSection = () => {
   return (
     <section className="animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-      <div className="bg-card rounded-2xl p-8 shadow-elegant hover-lift">
+      <div className="bg-card rounded-2xl p-8 shadow-elegant border hover-lift">
         <h2 className="text-2xl font-bold mb-6">Experience</h2>
         <div className="space-y-8 relative before:absolute before:left-0 before:top-2 before:h-full before:w-px before:bg-border">
           {experiences.map((exp, index) => (

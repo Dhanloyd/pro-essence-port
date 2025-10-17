@@ -26,7 +26,7 @@ const achievements = [
 const AchievementsSection = () => {
   return (
     <section className="animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-      <div className="bg-card rounded-2xl p-8 shadow-elegant hover-lift">
+      <div className="bg-card rounded-2xl p-8 shadow-elegant border hover-lift">
         <h2 className="text-2xl font-bold mb-6">Achievements</h2>
         <div className="grid gap-6">
           {achievements.map((achievement, index) => {

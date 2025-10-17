@@ -33,7 +33,7 @@ const RecommendationsSection = () => {
 
   return (
     <section className="animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-      <div className="bg-card rounded-2xl p-8 shadow-elegant hover-lift">
+      <div className="bg-card rounded-2xl p-8 shadow-elegant border hover-lift">
         <div className="flex items-center gap-3 mb-6">
           <Quote className="w-6 h-6 text-primary" />
           <h2 className="text-2xl font-bold">Recommendations</h2>
