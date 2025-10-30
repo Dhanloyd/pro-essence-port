@@ -1,47 +1,64 @@
-import { MapPin, Calendar, Mail, BadgeCheck, ChevronDown, Users } from "lucide-react";
+import { MapPin, Calendar, Mail, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import profilePhoto from "@/assets/profile-photo.jpg";
 
 const ProfileSection = () => {
+  const handleScheduleCall = () => {
+    window.open("https://calendly.com/your-link", "_blank");
+  };
+
+  const handleSendEmail = () => {
+    window.location.href = "mailto:setrojas445@gmail.com";
+  };
+
+  const handleVisitCommunity = () => {
+    window.open("https://your-community-link.com", "_blank");
+  };
+
   return (
     <section className="animate-fade-in-up">
-      <div className="bg-card rounded-2xl p-8 shadow-elegant border hover-lift">
+      <div className="bg-card rounded-2xl p-6 md:p-8 shadow-elegant border hover-lift">
         <div className="flex flex-col sm:flex-row gap-6 items-start">
           <img
             src={profilePhoto}
             alt="Profile"
-            className="w-32 h-32 sm:w-40 sm:h-40 rounded-2xl object-cover flex-shrink-0"
+            className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-2xl object-cover flex-shrink-0"
           />
           <div className="flex-1 space-y-4 w-full">
             <div>
-              <div className="flex items-center gap-2 mb-2">
-                <h1 className="text-3xl font-bold">Your Name Here</h1>
-                <BadgeCheck className="w-6 h-6 text-blue-500 fill-blue-500" />
-              </div>
+              <h1 className="text-2xl sm:text-3xl font-bold mb-2">Your Name Here</h1>
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
                 <MapPin className="w-4 h-4" />
                 <span>Metro Manila, Philippines</span>
               </div>
-              <p className="text-muted-foreground text-lg">
+              <p className="text-muted-foreground text-base md:text-lg">
                 Software Engineer \ Content Creator
               </p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-3 items-start">
-              <Button className="bg-blue-600 hover:bg-blue-700 text-white">
-                🏆 DICT OpenGov Hackathon 2025 Champion
-                <ChevronDown className="w-4 h-4 ml-2" />
-              </Button>
-            </div>
             <div className="flex flex-col sm:flex-row gap-3">
-              <Button size="lg" className="sm:flex-1">
+              <Button 
+                size="lg" 
+                className="w-full sm:flex-1"
+                onClick={handleScheduleCall}
+              >
                 <Calendar className="w-4 h-4 mr-2" />
                 Schedule a Call
               </Button>
-              <Button variant="outline" size="lg" className="sm:flex-1">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="w-full sm:flex-1"
+                onClick={handleSendEmail}
+              >
                 <Mail className="w-4 h-4 mr-2" />
                 Send Email
               </Button>
-              <Button variant="outline" size="lg" className="sm:flex-1">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="w-full sm:flex-1"
+                onClick={handleVisitCommunity}
+              >
                 <Users className="w-4 h-4 mr-2" />
                 Visit my community
               </Button>

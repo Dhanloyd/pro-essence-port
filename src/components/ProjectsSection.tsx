@@ -3,24 +3,29 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    name: "CodeCred",
-    description: "Online certifications for programmers",
-    url: "codecred.dev",
+    name: "Medical Laboratory System",
+    description: "Comprehensive laboratory information management system for medical facilities",
+    url: "#",
   },
   {
-    name: "BASE404",
-    description: "Online coding bootcamp",
-    url: "base-404.com",
+    name: "CAFGU Lending System",
+    description: "Loan management system for CAFGU members with automated tracking and reporting",
+    url: "#",
   },
   {
-    name: "DIIN.PH",
-    description: "AI-powered wardrobe assistant",
-    url: "diin.ph",
+    name: "E-Commerce Platform",
+    description: "Full-featured online shopping platform with payment gateway integration",
+    url: "#",
   },
   {
-    name: "DYNAMIS Workout Tracker",
-    description: "AI-powered workout tracker",
-    url: "dynamis-app.online",
+    name: "Coffee Shop Management",
+    description: "Point-of-sale and inventory management system for coffee shops",
+    url: "#",
+  },
+  {
+    name: "School Management System",
+    description: "Complete school administration platform for student and staff management",
+    url: "#",
   },
 ];
 
@@ -43,21 +48,23 @@ const ProjectsSection = () => {
               key={index}
               className="group border rounded-xl p-5 hover-lift bg-background/50"
             >
-              <h3 className="font-semibold text-lg mb-2 group-hover:text-primary transition-smooth">
+              <h3 className="font-semibold text-base md:text-lg mb-2 group-hover:text-primary transition-smooth">
                 {project.name}
               </h3>
               <p className="text-sm text-muted-foreground mb-3">
                 {project.description}
               </p>
-              <a
-                href={`https://${project.url}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm text-primary hover:underline"
-              >
-                {project.url}
-                <ExternalLink className="w-3 h-3" />
-              </a>
+              {project.url !== "#" && (
+                <a
+                  href={project.url.startsWith('http') ? project.url : `https://${project.url}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm text-primary hover:underline"
+                >
+                  View Project
+                  <ExternalLink className="w-3 h-3" />
+                </a>
+              )}
             </div>
           ))}
         </div>
